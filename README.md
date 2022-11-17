@@ -2,7 +2,7 @@
 被动收集资产并自动进行SQL注入检测（插件化 自动Bypass）、XSS检测、RCE检测、敏感信息检测
 
 ## 程序介绍
-- [x] ~~移植SqlMap的检测模式
+- [x] ~~移植SqlMap的检测模式~~
 - [x] ~~SQL注入自动Bypass~~
 - [x] ~~SQL注入支持Get/Post布尔盲注~~
 - [x] ~~SQL注入支持请求头Get/Post报错注入~~
