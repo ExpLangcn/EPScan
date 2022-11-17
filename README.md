@@ -71,6 +71,8 @@ Usage of /EPScan:
 
 ### 例：
 
+[**插件样例**](https://github.com/ExpLangcn/EPScan/blob/main/plus/bypass_test.go)
+
 ```
 package main //包名必须为 "main"
 
