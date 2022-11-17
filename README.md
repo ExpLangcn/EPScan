@@ -66,6 +66,25 @@ func Bypass(Value string) string { // 主函数名必须为 "Bypass" 区分大�
 }
 
 ```
+### 编译为插件：
+
+```
+sudo go build --buildmode=plugin -o plus/bypass_name.so bypass/bypass_name/bypass_name.go
+```
+
+编译后可以看到plus目录下新增了一个名为："bypass_name"的so文件，运行程序：
+
+```
+./EPScan -pluslist
+
++----+---------+---------+-------------------------------+-------------------------------+
+| ID | AUTHOR  | VERSION |           DESCRIBE            |             PATH              |
++----+---------+---------+-------------------------------+-------------------------------+
+| 1  | ExpLang | 1.0     | Bypass_SafeDog                | plus/bypass_SafeDog.so        |
+| 2  | ExpLang | 1.0     | 替换 "'" 单引号为 "%EF%BC%87"   | plus/bypass_apostrophemask.so |
+| 3  | ExpLang | 1.0     | 测试/演示   		      | plus/bypass_name.so           |
++----+---------+---------+-------------------------------+-------------------------------+
+```
 
 ----
 
