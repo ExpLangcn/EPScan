@@ -3,9 +3,11 @@
 
 ## 注意
 
-**由于Golang-Plus的特性，所以Windows不支持Bypass插件，Mac和Linux支持，请下载Plus对应系统的插件否则会报错。**
+~~**由于Golang-Plus的特性，所以Windows不支持Bypass插件，Mac和Linux支持，请下载Plus对应系统的插件否则会报错。**~~
 
-**暂时只支持Linux 和 Mac，如果报错 "panic: plugin: not implemented" 就是系统不支持Bypass插件**
+~~**暂时只支持Linux 和 Mac，如果报错 "panic: plugin: not implemented" 就是系统不支持Bypass插件**~~
+
+**已改为通过程序内置解释器加载Bypass插件**
 
 ## 程序介绍
 - [x] ~~移植SqlMap的检测模式~~
@@ -102,23 +104,17 @@ func Bypass(Value string) string { // 主函数名必须为 "Bypass" 区分大�
 	var bypass_SafeDog_str = "/*x^x*/"
 	Value_Bypass = strings.Replace(Value, "UNION", bypass_SafeDog_str+"UNION"+bypass_SafeDog_str, -1) // 寻找指定字符串并全部替换
 	Value_Bypass = strings.Replace(Value_Bypass, "SELECT", bypass_SafeDog_str+"SELECT"+bypass_SafeDog_str, -1)
-	Value_Bypass = strings.Replace(Value_Bypass, "AND", bypass_SafeDog_str+"AND"+bypass_SafeDog_str, -1)
-	Value_Bypass = strings.Replace(Value_Bypass, "=", bypass_SafeDog_str+"="+bypass_SafeDog_str, -1)
-	Value_Bypass = strings.Replace(Value_Bypass, " ", bypass_SafeDog_str, -1)
-	Value_Bypass = strings.Replace(Value_Bypass, "information_schema.", "%20%20/*!%20%20%20%20INFOrMATION_SCHEMa%20%20%20%20*/%20%20/*^x^^x^*/%20/*!.*/%20/*^x^^x^*/", -1)
-	Value_Bypass = strings.Replace(Value_Bypass, "FROM", bypass_SafeDog_str+"FROM"+bypass_SafeDog_str, -1)
 
 	return Value_Bypass // 返回处理后的Payload。
+	
+}
+
+func INFO() []string {
+	return []string{Plus_Author, Plus_Version, Plus_Describe} //输出插件信息
 }
 
 ```
 ### 编译为插件：
-
-```
-sudo go build --buildmode=plugin -o plus/bypass_name.so bypass/bypass_name/bypass_name.go
-```
-
-编译后可以看到plus目录下新增了一个名为："bypass_name"的so文件，运行程序：
 
 ```
 ./EPScan -pluslist
@@ -126,16 +122,16 @@ sudo go build --buildmode=plugin -o plus/bypass_name.so bypass/bypass_name/bypas
 +----+---------+---------+-------------------------------+-------------------------------+
 | ID | AUTHOR  | VERSION |           DESCRIBE            |             PATH              |
 +----+---------+---------+-------------------------------+-------------------------------+
-| 1  | ExpLang | 1.0     | Bypass_SafeDog                | plus/bypass_SafeDog.so        |
-| 2  | ExpLang | 1.0     | 替换 "'" 单引号为 "%EF%BC%87"   | plus/bypass_apostrophemask.so |
-| 3  | ExpLang | 1.0     | 测试/演示   		         | plus/bypass_name.so           |
+| 1  | ExpLang | 1.0     | Bypass_SafeDog                | plus/bypass_SafeDog.go        |
+| 2  | ExpLang | 1.0     | 替换 "'" 单引号为 "%EF%BC%87"   | plus/bypass_apostrophemask.go |
+| 3  | ExpLang | 1.0     | 测试/演示   		         | plus/bypass_name.go           |
 +----+---------+---------+-------------------------------+-------------------------------+
 ```
 
 ### 测试插件
 
 ```
-./EPScan -ptest "plus/bypass/bypass_name/bypass_name.go"
+./EPScan -ptest "plus/bypass_name.go"
 ```
 
 ----
