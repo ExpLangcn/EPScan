@@ -2,33 +2,16 @@
 被动收集资产并自动进行SQL注入检测（插件化 自动Bypass）、XSS检测、RCE检测、敏感信息检测
 
 ## 程序介绍
-- [x] ~~自动更新Bypass插件~~
+- [x] ~~移植SqlMap的检测模式
 - [x] ~~SQL注入自动Bypass~~
 - [x] ~~SQL注入支持Get/Post布尔盲注~~
 - [x] ~~SQL注入支持请求头Get/Post报错注入~~
 - [x] ~~SQL注入自动加载Bypass插件~~
-
-* SQL注入漏洞检测
-
-  * 移植SqlMap的检测模式
-
-  * 插件化Payload改造
-
-  * 插件化Bypass模式
-
-  * 支持Get/Post报错注入
-
-  * 支持Get/Post布尔盲注
-
-  * 支持请求头Get/Post报错注入
-
-  * 自动加载Bypass插件
-
-
+- [x] ~~插件化Payload改造
+- [x] ~~插件化Bypass模式
+- [ ] 自动更新Bypass插件
 - [ ] XSS漏洞检测
-
 - [ ] Rce漏洞检测
-
 - [ ] 敏感信息检测
 
 ## 程序截图
