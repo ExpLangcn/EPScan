@@ -41,16 +41,22 @@
 Usage of /EPScan:
   -deep 	bool 	// 选择后开启，默认不开启，不开效率快但是误报微高
         深入扫描（降低效率提高准确率）
+	
   -pdelay 	string 	// 需带有http协议头，看例子
         流量转发（程序的流量转发到指定端口，例如Burp的8080端口: http://127.0.0.1:8080) 
+	
   -pdir 	string	// 加载指定目录下所有的插件，默认不进行Bypass
         批量加载指定目录下的Bypass插件
+	
   -plist 	string	// 查看插件信息，默认输出 "plus/" 目录下的插件信息
         查看插件列表和详细信息 (default "plus/")
+	
   -port 	string	// 开启监听端口
         监听端口配置 (default "8899")
+	
   -ptest 	string	// 测试指定插件效果 会输出原始Payload和处理后的Payload
         插件测试
+	
   -run 		bool	// 开始被动式扫描，例如：./EPScan -pdir plus/ -port 8899 -run
         开始被动式扫描
 ```
