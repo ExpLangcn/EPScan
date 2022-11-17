@@ -7,8 +7,8 @@
 - [x] ~~SQL注入支持Get/Post布尔盲注~~
 - [x] ~~SQL注入支持请求头Get/Post报错注入~~
 - [x] ~~SQL注入自动加载Bypass插件~~
-- [x] ~~插件化Payload改造
-- [x] ~~插件化Bypass模式
+- [x] ~~插件化Payload改造~~
+- [x] ~~插件化Bypass模式~~
 - [ ] 自动更新Bypass插件
 - [ ] XSS漏洞检测
 - [ ] Rce漏洞检测
