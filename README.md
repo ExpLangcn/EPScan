@@ -33,7 +33,7 @@
 
 ## 程序截图
 
-## 使用教程
+## 参数教程
 
 ```
 ./EPScan -h
@@ -59,6 +59,18 @@ Usage of /EPScan:
 	
   -run 		bool	// 开始被动式扫描，例如：./EPScan -pdir plus/ -port 8899 -run
         开始被动式扫描
+```
+
+**开始被动式扫描**
+
+```
+./EPScan -port 8899 -run
+```
+
+**开始被动式扫描并加载Bypass插件目录**
+
+```
+./EPScan -pdir plus/ -port 8899 -run
 ```
 
 ## SQL注入Bypass插件编写
