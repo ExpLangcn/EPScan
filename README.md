@@ -17,13 +17,13 @@
 
 ## 程序截图
 
-<img width="996" alt="image" src="https://user-images.githubusercontent.com/52586866/202387755-55cb5ad6-c4ea-4cf7-8eb5-be87ab20398a.png">
+<img src=https://user-images.githubusercontent.com/52586866/202387755-55cb5ad6-c4ea-4cf7-8eb5-be87ab20398a.png width=40% />
 
-<img width="926" alt="image" src="https://user-images.githubusercontent.com/52586866/202387795-09e707fc-4c37-48e5-9584-5595dcc0a27e.png">
+<img src=https://user-images.githubusercontent.com/52586866/202387795-09e707fc-4c37-48e5-9584-5595dcc0a27e.png width=40% />
 
-<img width="729" alt="image" src="https://user-images.githubusercontent.com/52586866/202387548-8b1dfe2b-0b15-4ceb-8385-f0e8d0779529.png">
+<img src=https://user-images.githubusercontent.com/52586866/202387548-8b1dfe2b-0b15-4ceb-8385-f0e8d0779529.png width=40% />
 
-<img width="1236" alt="image" src="https://user-images.githubusercontent.com/52586866/202387599-72faf4e8-d407-4b52-9228-74503ebbad8a.png">
+<img src=https://user-images.githubusercontent.com/52586866/202387599-72faf4e8-d407-4b52-9228-74503ebbad8a.png width=40% />
 
 ## 参数教程
 
