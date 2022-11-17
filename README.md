@@ -1,6 +1,12 @@
 # EPScan
 被动收集资产并自动进行SQL注入检测（插件化 自动Bypass）、XSS检测、RCE检测、敏感信息检测
 
+## 注意
+
+**由于Golang-Plus的特性，所以Windows不支持Bypass插件，Mac和Linux支持，请下载Plus对应系统的插件否则会报错。**
+
+**暂时只支持Linux 和 Mac，如果报错 "panic: plugin: not implemented" 就是系统不支持Bypass插件**
+
 ## 程序介绍
 - [x] ~~移植SqlMap的检测模式~~
 - [x] ~~SQL注入自动Bypass~~
