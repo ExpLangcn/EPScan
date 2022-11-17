@@ -27,6 +27,8 @@
 
 ## 参数教程
 
+**一定要下载crt并安装证书，否则无法扫描https**
+
 ```
 ./EPScan -h
 
@@ -54,6 +56,8 @@ Usage of /EPScan:
 ```
 
 **开始被动式扫描**
+
+**一定要下载crt并安装证书，否则无法扫描https**
 
 ```
 ./EPScan -port 8899 -run
