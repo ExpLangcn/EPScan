@@ -82,7 +82,7 @@ sudo go build --buildmode=plugin -o plus/bypass_name.so bypass/bypass_name/bypas
 +----+---------+---------+-------------------------------+-------------------------------+
 | 1  | ExpLang | 1.0     | Bypass_SafeDog                | plus/bypass_SafeDog.so        |
 | 2  | ExpLang | 1.0     | 替换 "'" 单引号为 "%EF%BC%87"   | plus/bypass_apostrophemask.so |
-| 3  | ExpLang | 1.0     | 测试/演示   		      | plus/bypass_name.so           |
+| 3  | ExpLang | 1.0     | 测试/演示   		         | plus/bypass_name.so           |
 +----+---------+---------+-------------------------------+-------------------------------+
 ```
 
