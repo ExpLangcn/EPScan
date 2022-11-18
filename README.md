@@ -61,6 +61,12 @@ Usage of /EPScan:
 	
   -run 		bool	// 开始被动式扫描，例如：./EPScan -pdir plus/ -port 8899 -run
         开始被动式扫描
+	
+  -iflength	bool	// 过滤Length为-1的结果（降低误报）默认不开启
+  	过滤Length为-1的结果（降低误报）默认不开启
+
+  -th		int	// 发包线程 默认10
+  	发包线程 默认10
 ```
 
 **开始被动式扫描**
@@ -83,7 +89,7 @@ Usage of /EPScan:
 
 ### 例：
 
-[**插件样例**](https://github.com/ExpLangcn/EPScan/blob/main/plus/bypass_test.go)
+[**点击查看插件样例**](https://github.com/ExpLangcn/EPScan/blob/main/plus/unionalltounion.go)
 
 ```
 package main //包名必须为 "main"
@@ -137,21 +143,6 @@ func INFO() []string {
 ----
 
 # Hi there 👋
-
-<!--
-**ExpLangcn/ExpLangcn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 
 ![](https://komarev.com/ghpvc/?username=ExpLangcn)
 
