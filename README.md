@@ -41,6 +41,12 @@
 ./EPScan -h
 
 Usage of /EPScan:
+  -Wlist string
+        只扫描文件内的Host 文件内一行一条 不可带有http协议
+	
+  -blist string
+        文件内的Host不扫描 文件内一行一条 不可带有http协议
+	
   -deep 	bool 	// 选择后开启，默认不开启，不开效率快但是误报微高
         深入扫描（降低效率提高准确率）
 	
